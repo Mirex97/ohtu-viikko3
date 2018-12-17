@@ -1,13 +1,15 @@
 package ohtu.strategy;
 
-import static ohtu.kivipaperisakset.Paaohjelma.io;
+import ohtu.IO;
 import ohtu.kps.AbstractKPS;
 import ohtu.kps.Pelitehdas;
 
 public abstract class Pelimoodi {
+	public static IO io;
 	private static AbstractKPS peli;
 
-	public static void suorita() {
+	public static void suorita(IO ioPass) {
+		io = ioPass;
 		boolean kaynnista = true;
 		while (kaynnista) {
 			printHelp();

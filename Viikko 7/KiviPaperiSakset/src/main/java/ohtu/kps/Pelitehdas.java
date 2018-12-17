@@ -1,7 +1,8 @@
 
 package ohtu.kps;
 
-import static ohtu.kivipaperisakset.Paaohjelma.io;
+import static ohtu.strategy.Pelimoodi.io;
+
 
 public class Pelitehdas {
 	

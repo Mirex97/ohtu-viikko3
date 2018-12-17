@@ -3,11 +3,11 @@ package ohtu.kps;
 import ohtu.komponentit.Tuomari;
 import ohtu.komponentit.TkoAly;
 import ohtu.IO;
-import ohtu.kivipaperisakset.Paaohjelma;
+import ohtu.strategy.Pelimoodi;
 
 public abstract class AbstractKPS {
 
-	protected static final IO io = Paaohjelma.io;
+	protected static final IO io = Pelimoodi.io;
 	protected Tuomari tuomari;
 	protected TkoAly tekoaly;
 	protected boolean pvp;
